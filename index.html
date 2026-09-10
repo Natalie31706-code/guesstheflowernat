@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+<body>
+    <div class="layer">
+        <div class="game">
+            <div class="container">
+                <h1>Welcome to the flower gussing game!🌺</h1>
+                <div class="text">
+                    <p id="correct">Well done Yay!! (,,>ヮ,,)!</p>
+                    <p id="wrong"></p>
+                    <p id="answer">The flowers were: <span id="flowerss"></span></p>
+                </div>
+                <audio id="correctS" preload="auto" src="./mixkit-fantasy-game-success-notification-270.wav"></audio>
+                <audio id="wrongS" preload="auto" src="./mixkit-negative-answer-lose-2032.wav"></audio>
+                
+                <div class="numbers">
+                    <h2>Score: <span id="score">0</span></h2>
+                    <h2>Chances: <span id="chances">5</span></h2>
+                </div>
+
+                <input id="input" type="text" placeholder="Guess the flower type">
+
+                <div class="btns">
+                    <button id="submit">Submit</button>
+                    <button id="reset">Restart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./index.js"> </script>
+</body>
+</html>

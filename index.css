@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Courgette", cursive;
+}
+
+body{
+    background-image: url("./778cfe48cba46b5e8e8e9001a74e6541.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.layer{
+    width: 100%;
+    height: 100vh;
+}
+
+.game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 43%;
+    background-color: rgba(255, 205, 55, 0.451);
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(118, 167, 230);
+}
+
+.container h1{
+    padding: 15px 15px 10px 15px;
+}
+
+.container .text{
+    margin-bottom: 7px;
+}
+
+.container .text p{
+    color: rgb(230, 130, 156);
+    padding: 3px;
+    font-size: 20px;
+    display: none;
+}
+
+.container .text #flowerss{
+    color: white;
+}
+
+.container .numbers h2{
+    margin-bottom: 2px;
+    font-size: 30px;
+}
+
+.container input{
+    width: 55%;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 15px;
+    font-size: 17px;
+    color: rgb(230, 130, 156);
+}
+
+.container .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0px 23px 0px;
+}
+
+.container .btns button{
+    padding: 10px 35px;
+    border-radius: 10px;
+    color: rgb(88, 88, 88);
+    transition: 0.5s;
+}
+
+.container .btns #submit{
+    background-color: rgb(86, 237, 129, 0.756);
+}
+
+.container .btns #submit:hover{
+    background-color: rgba(64, 177, 96, 0.756);
+    color: white;
+}
+
+.container .btns #reset{
+    background-color: rgba(228, 109, 109, 0.756);
+    display: none;
+}
+
+.container .btns #reset:hover{
+    background-color: rgba(164, 79, 79, 0.756);
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: 70%;
+        font-size: 10px;
+    }
+
+    .container .text p{
+        font-size: 17px;
+    }
+
+    .container .numbers h2{
+        font-size: 20px;
+    }
+
+    .container input{
+        width: 80%;
+    }
+
+    .container .btns button{
+        padding: 10px;
+    }
+}
